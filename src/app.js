@@ -5,6 +5,8 @@ import superagent from 'superagent';
 class App extends Component{
     
     componentDidMount(){
+        var previous = 0;
+        var current;
         var context = this;
         setInterval(()=>{
             superagent
@@ -16,6 +18,11 @@ class App extends Component{
                         context.setState({errorMessage: "Error fetching data from the server. Please check your internet connection and reload the page again."})
                     }else{
                         context.setState({conversation: response.body.result});
+                        current = response.body.result.length;
+                        if(current != previous){
+                            document.getElementById('chat').scrollTop = document.getElementById('chat').scrollHeight;
+                            previous = current;
+                        }
                     }
                 })
         },500)
