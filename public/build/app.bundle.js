@@ -995,9 +995,10 @@ var App = function (_Component) {
                     if (error) {
                         context.setState({ errorMessage: "Error fetching data from the server. Please check your internet connection and reload the page again." });
                     } else {
-                        context.setState({ conversation: response.body.result });
                         current = response.body.result.length;
                         if (current != previous) {
+                            context.setState({ conversation: response.body.result });
+
                             document.getElementById('chat').scrollTop = document.getElementById('chat').scrollHeight;
                             previous = current;
                         }
