@@ -318,7 +318,7 @@
 
 	=========================================================================*/
 
-	var countDownDate = new Date("Aug 5, 2018 08:37:25").getTime();
+	var countDownDate = new Date("Dec 5, 2017 08:37:25").getTime();
 
 	// Update the count down every 1 second
 
@@ -340,7 +340,7 @@
 
 	    // Time calculations for days, hours, minutes and seconds
 
-	    var days = Math.floor(distance / (24 * 60 * 60 * 24));
+	    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 
 	    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 
