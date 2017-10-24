@@ -1,14 +1,92 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+      <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>MyStore - Indian Online Shopping Store</title>
             <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
-    <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1>Basic Chat App by CodeMode</h1>
-    <div id="app"></div>
-    <script src="./build/app.bundle.js"></script>
+  <div class="cs-loader">
+      <div class="cs-loader-inner">
+        <label> <span class="circle"></span> </label>
+        <label> <span class="circle"></span> </label>
+        <label> <span class="circle"></span> </label>
+        <label> <span class="circle"></span> </label>
+        <label> <span class="circle"></span> </label>
+        <label> <span class="circle"></span> </label>
+      </div>
+    </div>
+    
+    <div id="page" class="page">
+
+        <div id="main1" class="main_section main1 main3 overlay">
+
+            <div class="container height-100">
+                <div class="display-table">
+                    <div class="table-cell">
+                        <div class="main_content editContent align-center">
+                            <div class="wraplogo">
+                                <img src="img/logo.png" class="logo" alt="Rediso Creative HTML template">
+                            </div>
+                            <div class="timer" id="timer"></div>
+                            <p id="typed1"><span class="typed"></span></p>
+                            <ul class="social_links">
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="#" class="message"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                            </ul>
+
+                            <div class="wrapform">
+                                <p class="textform">Get the latest update!</p>
+                                <form id="formsubscribe">
+                                    <input type="email" name="semail" id="semail" class="form-control" placeholder="Email address"><input type="submit" name="submit" id="btnsubscribe" value="SUBSCRIBE NOW">
+                                    <p class="notifsubscribe"></p>
+                                </form>
+                                <p>&copy; 2017 domain.com. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- main_section -->
+
+    </div><!-- /#page -->
+
+    <div class="contact">
+        <div class="close">
+            <a href="#">
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </a>
+        </div>
+        <div class="wrapformcontact">
+            <h1>&#8212; Contact Us</h1>
+            <form id="form1">
+                <p class="notif"></p>
+                <label>Full name</label>
+                <input type="text" name="name" id="fname">
+
+                <label>Email</label>
+                <input type="email" name="email" id="femail">
+
+                <label>Message</label>
+                <textarea name="message" id="fmessage"></textarea>
+
+                <input type="submit" name="submit" id="btncontactsend" value="SEND">
+            </form>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="js/customplugin.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/customjs.js"></script>
   </body>
 </html>
