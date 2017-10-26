@@ -24,7 +24,7 @@
 
 	$("#typed1 .typed").typed({
 
-	    strings: ["Website under the construction!", "Stay tune for a while...", "Subscribe to get our latest offer!"],
+	    strings: ["Website under construction!", "Stay tuned for a while...", "Subscribe to get our latest offer!","Something Awesome is on it's way..."],
 
 	    typeSpeed: 120,
 
