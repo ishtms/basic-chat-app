@@ -26,7 +26,7 @@
 
 	    strings: ["Website under construction!", "Stay tuned for a while...", "Subscribe to get our latest offer!","Something Awesome is on it's way..."],
 
-	    typeSpeed: 120,
+	    typeSpeed: 180,
 
 	    cursorChar: "|",
 
